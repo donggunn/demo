@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  matList = [
+    { path: '', title:'dashboard'}, {path:'settings', title: 'Settings'}, {path: 'logs', title: 'Logs'}
+  ];
 }

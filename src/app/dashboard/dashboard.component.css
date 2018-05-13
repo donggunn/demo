@@ -1,0 +1,35 @@
+.dashboard-page {
+    color: #a7a7a7;
+}
+
+.dashboard-header {
+    padding: 0.5em 0;
+}
+
+.coin-type {
+    display: inline-block;
+    border: 1px solid #a7a7a7;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.table-coin thead th {
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-coin thead tr th:first-child,
+.table-coin tbody td {
+    text-align: center;
+    border-right: 1px solid #a7a7a7;
+}
+
+.table-coin tbody tr td:last-child{
+    border-right:none;
+}
+@media(max-width: 756px){
+    .hidden-td{
+        display: none;
+    }
+}

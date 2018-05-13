@@ -1,0 +1,35 @@
+<div class="container dashboard-page">
+	<div class="dashboard-header">
+		<div class="coin-type">
+			Gemini
+		</div>
+	</div>
+	<section class="dashboard-content">
+		<table class="table table-coin">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Price</th>
+					<th>High</th>
+					<th>Low</th>
+					<th class="hidden-td">Bid</th>
+					<th class="hidden-td">Ask</th>
+					<th class="hidden-td">Volume</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let item of data; let i = index">
+					<td>{{i}}</td>
+					<td>{{item.name}}</td>
+					<td>{{item.price}}</td>
+					<td>{{item.high}}</td>
+					<td>{{item.low}}</td>
+					<td class="hidden-td">{{item.bid}}</td>
+					<td class="hidden-td">{{item.ask}}</td>
+					<td class="hidden-td">{{item.volume}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</div>

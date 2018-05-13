@@ -1,0 +1,67 @@
+.all-wrap {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.logo {
+    padding: 0.5em;
+    font-size: 20px;
+}
+
+.logo a {
+    color: #ffffff;
+}
+
+.logo a:hover {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.app-header .mat-icon-button {
+    width: 4em;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    line-height: 2em;
+}
+
+.app-sidenav {
+    background-color: #646464;
+    color: #a7a7a7;
+    font-family: 'Karla', 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 10px 15px;
+}
+
+.app-sidenav-header .mat-icon {
+    width: 50px;
+    font-size: 50px;
+}
+
+.app-sidenav-content {
+    width: 20em;
+    margin-top: 1em;
+    list-style: none;
+    padding: 0;
+}
+
+ul.app-sidenav-content li {
+    padding: 0.7em 0.5em;
+    cursor: pointer;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+ul.app-sidenav-content li a {
+    color: #e8e8e8;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+ul.app-sidenav-content li:last-child {
+    border: none;
+}
