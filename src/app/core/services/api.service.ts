@@ -7,11 +7,11 @@ import { catchError } from "rxjs/operators";
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-  private handelErrors(error: any) {
+  private handleError(error: any) {
     return  throwError(error);
   }
   get(path: string, params: HttpParams = new HttpParams()): Observable<any>{
     return this.http.get(`${environment.api_url}${path}`, { params })
-      .pipe(catchError(this.handelErrors));
+      .pipe(catchError(this.handleError));
   }
 }
