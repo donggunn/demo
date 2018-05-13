@@ -1,4 +1,6 @@
+import { CoinsService } from "../core/services";
 import { Component, OnInit } from "@angular/core";
+import { Coin } from "../core/models";
 
 @Component({
   selector: "app-dashboard",
@@ -6,27 +8,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./dashboard.component.css"]
 })
 export class DashboardComponent implements OnInit {
-  data = [
-    {
-      name: "BTCUSD",
-      price: "111,3",
-      high: "111",
-      low: "131",
-      bid: "111",
-      ask: "11",
-      volume: "111"
-    },
-    {
-      name: "ETHUSD",
-      price: "213,3",
-      high: "23",
-      low: "323",
-      bid: "665",
-      ask: "11",
-      volume: "111"
-    }
-  ];
-  constructor() {}
+  coins: Coin[] = [];
+  constructor(private coinsService: CoinsService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+      this.coinsService.get("").subscribe(data => {
+          this.coins = data;
+      });
+  }
 }

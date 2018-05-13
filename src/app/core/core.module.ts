@@ -1,10 +1,11 @@
+import { ApiService, CoinsService } from "./services";
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule, HttpClientModule],
+  providers: [ApiService, CoinsService],
   declarations: []
 })
-export class CoreModule { }
+export class CoreModule {}

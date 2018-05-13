@@ -19,15 +19,15 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let item of data; let i = index">
+				<tr *ngFor="let item of coins; let i = index">
 					<td>{{i}}</td>
-					<td>{{item.name}}</td>
-					<td>{{item.price}}</td>
-					<td>{{item.high}}</td>
-					<td>{{item.low}}</td>
-					<td class="hidden-td">{{item.bid}}</td>
-					<td class="hidden-td">{{item.ask}}</td>
-					<td class="hidden-td">{{item.volume}}</td>
+					<td>{{item.coinName}}</td>
+					<td>{{item.last | currency:'':'symbol':'1.2-3'}}</td>
+					<td>{{item.high | currency:'':'symbol':'1.2-3'}}</td>
+					<td>{{item.low | currency:'':'symbol':'1.2-3'}}</td>
+					<td class="hidden-td">{{item.bid | currency:'':'symbol':'1.2-3'}}</td>
+					<td class="hidden-td">{{item.ask | currency:'':'symbol':'1.2-3'}}</td>
+					<td class="hidden-td">{{item.volumeUSD | currency:'':'symbol':'1.2-3'}}</td>
 				</tr>
 			</tbody>
 		</table>

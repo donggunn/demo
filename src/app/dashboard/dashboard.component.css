@@ -20,16 +20,16 @@
 }
 
 .table-coin thead tr th:first-child,
-.table-coin tbody td {
+.table-coin tbody tr td:first-child {
     text-align: center;
     border-right: 1px solid #a7a7a7;
 }
-
-.table-coin tbody tr td:last-child{
-    border-right:none;
+.table-coin tbody td {
+    text-align: center;
 }
-@media(max-width: 756px){
-    .hidden-td{
+
+@media(max-width: 756px) {
+    .hidden-td {
         display: none;
     }
 }
